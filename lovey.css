@@ -83,7 +83,7 @@ i {
   animation: drop 1s ease-in-out 6500ms 1 forwards;
 }
 
-@media screen and (min-width: 300px) {
+@media screen and (max-width: 767px) {
   main {
     transform: scale(0.5);
   }
