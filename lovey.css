@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Quicksand:wght@300..700&display=swap");
+
+body {
+  background: rgb(255, 80, 109);
+}
+main {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content {
+  height: 200px;
+  width: 200px;
+  position: relative;
+  left: 500px;
+  animation: slide-in 100ms ease-in 1s 1 forwards;
+  opacity: 0;
+}
+i {
+  color: whitesmoke;
+  transform: scale(3);
+  opacity: 0;
+}
+.h {
+  height: 10px;
+  width: 10px;
+  animation: slide-in 1s ease-in 2s 1 forwards;
+}
+.e {
+  animation: slide-in 800ms ease-in 3s 1 forwards;
+}
+.y {
+  animation: slide-in 500ms ease-in 3800ms 1 forwards;
+}
+.content .fa-heart {
+  color: red;
+  position: relative;
+  top: 110px;
+  left: 100px;
+  transform: scale(25);
+  filter: drop-shadow(2px 2px 5px rgb(238, 97, 196));
+  animation: appear 500ms ease-in 5s 1 forwards,
+    heartbeat 1500ms ease-in-out 5s infinite;
+}
+.fa-h {
+  animation: appear 200ms ease-in 2s 1 forwards;
+  position: relative;
+  bottom: 5px;
+  right: 143px;
+}
+.fa-e {
+  animation: appear 200ms ease-in 3s 1 forwards;
+  position: relative;
+  bottom: 1px;
+  right: 111px;
+}
+.fa-y {
+  animation: appear 200ms ease-in 3800ms 1 forwards;
+  position: relative;
+  right: 83px;
+}
+.love {
+  font-family: "Pacifico", serif;
+  font-size: xx-large;
+}
+.love .red {
+  color: red;
+  position: relative;
+  top: 268px;
+  right: 201px;
+  opacity: 0;
+  animation: drop 1s ease-in-out 6500ms 1 forwards;
+}
+.love .white {
+  color: white;
+  position: relative;
+  top: -240px;
+  right: 201px;
+  opacity: 0;
+  animation: drop 1s ease-in-out 6500ms 1 forwards;
+}
+
+@keyframes slide-in {
+  from {
+    position: relative;
+    left: 500px;
+    opacity: 0;
+  }
+  to {
+    position: relative;
+    left: 0px;
+    opacity: 1;
+  }
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes heartbeat {
+  0% {
+    transform: scale(25);
+  }
+  50% {
+    transform: scale(30);
+  }
+  100% {
+    transform: scale(25);
+  }
+}
+@keyframes drop {
+  0% {
+    transform: scale(10);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
