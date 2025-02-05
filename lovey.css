@@ -83,6 +83,43 @@ i {
   animation: drop 1s ease-in-out 6500ms 1 forwards;
 }
 
+@media screen and (min-width: 300px) {
+  main {
+    transform: scale(0.5);
+  }
+  .content .fa-heart {
+    position: relative;
+
+    left: 186px;
+  }
+  .fa-h {
+    position: relative;
+
+    left: 50px;
+  }
+  .fa-e {
+    position: relative;
+
+    left: 83px;
+  }
+  .fa-y {
+    animation: appear 200ms ease-in 3800ms 1 forwards;
+    position: relative;
+    left: 113px;
+  }
+  .love .white {
+    position: relative;
+    top: -199px;
+    left: -43px;
+    font-size: 54px;
+  }
+  .love .red {
+    position: relative;
+    top: 282px;
+    right: 57px;
+  }
+}
+
 @keyframes slide-in {
   from {
     position: relative;
